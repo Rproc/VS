@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 17
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Informe a primeira nota: ");
+        const userInput2 = prompt("Informe a segunda nota: ");
+
+        // Handling user input
+        // const userInput2 =; prompt("Digite outro número: ");
+        nota1 = +userInput;
+        nota2 = +userInput2;
+
+        media = (nota1+nota2)/2;
+        resultado= '';
+
+        switch (true){
+            case (media < 4):
+                resultado = 'Aluno Reprovado';
+                alert(resultado);
+                break
+            case (media >= 7):
+                resultado = 'Aluno Aprovado Direto';
+                alert(resultado);
+                break
+            case (media < 7 && media >= 4):
+                resultado = 'Aluno em Recuperação';
+                alert(resultado);
+                const userInput3 = prompt("Informe a primeira nota: ");
+                nota3 = +userInput3;
+                if (nota3 >= 5)
+                    alert('Aprovado na Recuperação');
+                else
+                    alert('Reprovado na Recuperação');
+
+                break
+
+            default:
+                alert('Nota digitada fora do padrão');
+        }
+ 
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 9
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Insira seu salario: ");
+        
+        // Handling user input
+        a = +userInput
+        let transporte = a*(6/100)
+        let saude = a*(3/100)
+        let pos_desconto = a - a*(9/100)
+
+        alert('O valor de desconto do vale transporte será de: ' + transporte +
+        '\nO desconto do plano de saude será de: ' + saude +
+        '\nSeu salário pós desconto será de: ' + pos_desconto);
+    </script>
+
+</body>
+ 

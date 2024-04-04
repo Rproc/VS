@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 18
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Pedra, Papel ou Tesoura: ");
+        const userInput2 = prompt("Pedra, Papel ou Tesoura: ");
+
+
+        if(userInput == 'Pedra'){
+            if (userInput2 == 'Papel')
+                alert('Jogador 2 Ganhou');
+            else if (userInput2 == 'Tesoura')
+                alert('Jogador 1 Ganhou');
+            else
+                alert('Empate')
+        }
+        else if (userInput == 'Papel'){
+            if (userInput2 == 'Pedra')
+                alert('Jogador 1 Ganhou')
+            else if (userInput2 == 'Tesoura')
+                alert('Jogador 2 Ganhou')
+            else
+                alert('Empate')
+        }
+        else if (userInput == 'Tesoura'){
+            if (userInput2 == 'Pedra')
+                alert('Jogador 2 Ganhou')
+            else if (userInput2 == 'Papel')
+                alert('Jogador 1 Ganhou')
+            else
+                alert('Empate')
+        }
+        else
+            alert('Alguma Jogada Inválida')
+        
+
+
+    </script>
+</body>
+ 
+</html>

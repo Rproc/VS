@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 16
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Informe seu peso (em kilos): ");
+        const userInput2 = prompt("Informe sua altura (em centimetros): ");
+
+        // Handling user input
+        // const userInput2 = prompt("Digite outro número: ");
+        peso = +userInput
+        altura = +userInput2
+        altura = altura/100
+        imc = peso/(altura*altura)
+
+        if (imc > 25)
+            alert('Acima do Peso Ideal');
+        else
+            alert('Peso OK');
+ 
+    </script>
+</body>
+ 
+</html>

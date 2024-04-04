@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 14
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Digite a primeira nota: ");
+        const userInput2 = prompt("Digite a segunda nota: ");
+        const userInput3 = prompt("Digite a terceira nota: ");
+        const userInput4 = prompt("Digite a quarta nota: ");
+
+        // Handling user input
+        // const userInput2 = prompt("Digite outro número: ");
+        a = +userInput
+        b = +userInput2
+        c = +userInput3
+        d = +userInput4
+
+        media = (a+b+c+d)/4
+        if (media >= 6)
+            c = 'Aluno Aprovado'
+        else   
+            c = 'Aluno Reprovado'
+
+        alert(c);
+ 
+    </script>
+</body>
+ 
+</html>

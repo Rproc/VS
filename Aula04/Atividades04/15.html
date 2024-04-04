@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 15
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Digite o primeiro número: ");
+        const userInput2 = prompt("Digite o segundo número: ");
+        const userInput3 = prompt("Digite o terceiro número: ");
+
+        // Handling user input
+        // const userInput2 = prompt("Digite outro número: ");
+        num1 = +userInput
+        num2 = +userInput2
+        num3 = +userInput3
+        maior = -999999999999999999999999
+
+        if (num1 >= num2)
+        {
+            if(num1 >= num3)
+                maior = num1
+            else
+                maior = num3
+        }
+        else if (num2 >= num3)
+            maior = num2
+        else
+            maior = num3
+
+
+        alert('O Maior número é: ' + maior);
+ 
+    </script>
+</body>
+ 
+</html>
