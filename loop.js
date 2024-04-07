@@ -6,15 +6,21 @@ while (i < 6) {
 }
 
 
+
+
+
+
 // Faça Enquanto
-i = 0;
+let j = 0;
 do {
-  console.log(i);
-  i++;
-} while (i < 6);
+  console.log(j);
+  j++;
+} while (j < 6);
 
 
-// Por
-// for (let i = 0; i < 4; i++) {
-//     console.log(i);
-// }
+
+for (let i = 0; i < 4; i++) {
+    console.log(i);
+}
+
+
