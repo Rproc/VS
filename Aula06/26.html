@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 26
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Digite um número: ");
+        
+        // Handling user inputa
+        // const userInput2 = prompt("Digite outro número: ");
+        a = +userInput
+        // b = +userInput2
+        saida =''
+
+        for(let i=a;i>0;i--){
+            
+            saida += (i+', ')
+        }
+        saida+='0'
+
+        saida2=''
+        for(let i=0; i<a;i++){
+            saida2 += (i+ ', ')
+        }
+        saida2+=a
+        alert('Contagem regressiva: '+saida+ '\nContagem progressiva: ' + saida2);
+
+ 
+    </script>
+</body>
+ 
+</html>

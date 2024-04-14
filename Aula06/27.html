@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 27
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Digite uma nota (0~10): ");
+        
+        // Handling user inputa
+        // const userInput2 = prompt("Digite outro número: ");
+        a = +userInput
+        // b = +userInput2
+
+        while(a<0 || a>10){
+            alert('Nota digitada fora dos conformes')
+            const userInput = prompt("Digite uma nota (0~10): ");
+            a = +userInput
+
+        }
+
+        alert('Nota Digitada dentro dos conformes: '+a);
+
+ 
+    </script>
+</body>
+ 
+</html>

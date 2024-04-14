@@ -10,19 +10,25 @@
  
 <body>
     <h1>
-          Exercício 1
+          Exercício 35
       </h1>
  
     <script>
+
+        function soma(a, b){
+            return a+b
+        }
+
         const userInput = prompt("Digite um número: ");
-        
-        // Handling user input
         const userInput2 = prompt("Digite outro número: ");
+
+        // Handling user input
         a = +userInput
         b = +userInput2
+        resultado = soma(a,b)
 
-        alert('A soma dos números é: ' + (a+b));
- 
+        alert('A soma dos números é: '+ resultado)
+        // alert('A soma dos números é: ' + soma(a,b))
     </script>
 </body>
  

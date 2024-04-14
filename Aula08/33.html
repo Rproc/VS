@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 33
+      </h1>
+ 
+    <script>
+
+        function verificaIdade(idade){
+            saida =''
+            if (idade >= 18)
+                saida = 'Fusca\tR$6.500,00\nGol Bolinha\tR$10.000,00'
+            else
+                saida = 'Bob Esponja\nBen10\n'
+
+            return saida
+        }
+
+        const userInput = prompt("Digite sua idade: ");
+        
+        // Handling user inputa
+        // const userInput2 = prompt("Digite outro número: ");
+        a = +userInput
+        // b = +userInput2
+        msg= verificaIdade(a)
+
+        alert(msg);
+
+ 
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 24
+      </h1>
+ 
+    <script>
+        const userInput = prompt("Digite o número para fazer a tabuada: ");
+        
+        // Handling user inputa
+        // const userInput2 = prompt("Digite outro número: ");
+        a = +userInput
+        // b = +userInput2
+        saida =''
+
+        for(let i=0;i<(10*a);i=i+a){
+            
+            saida += (i+', ')
+        }
+        saida+=10*a
+        alert('Tabuada do número: ' + a + '\n'+saida);
+ 
+    </script>
+</body>
+ 
+</html>
