@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 49
+      </h1>
+ 
+    <script>
+        
+        aluno=[]
+        for(let i=0; i<3;i++){
+            userInput = prompt("Digite o nome do aluno: ");
+            userInput2 = prompt("Digite a média: ")
+    
+            a = +userInput2
+            while(a<0 || a>10){
+                alert('Nota digitada fora dos conformes')
+                const userInput = prompt("Digite a média do aluno (0~10): ");
+                a = +userInput
+            }
+
+            alert('Nota Digitada dentro dos conformes: '+a);
+            aluno[i]=[userInput, a]
+
+        }
+        saida=''
+        aluno.forEach(element => {
+            saida+=(element[0] + ' \t Média: ' + element[1] + '\n')
+        });
+        alert('Lista de alunos e suas médias:\n' + saida)
+
+    </script>
+</body>
+ 
+</html>

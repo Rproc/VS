@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 46
+      </h1>
+ 
+    <script>
+        
+        nomes =[]
+        notas=[]
+        for(let i=0; i<10;i++){
+            userInput2 = prompt("Digite o nome da pessoa: ");
+            userInput = prompt("Digite a idade da pessoa: ")
+            a = +userInput
+            nomes.push(userInput2)
+            notas.push(a)
+        }
+
+        let i = notas.indexOf(Math.max(...notas));
+
+
+        alert('O nome da pessoa mais velha é: ' + nomes[i])
+
+    </script>
+</body>
+ 
+</html>

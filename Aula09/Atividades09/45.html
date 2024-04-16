@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 45
+      </h1>
+ 
+    <script>
+        
+        nomes =[]
+        notas=[]
+        for(let i=0; i<10;i++){
+            userInput2 = prompt("Digite o nome do aluno: ");
+            userInput = prompt("Digite a nota desse aluno: ")
+            a = +userInput
+            nomes.push(userInput2)
+            notas.push(a)
+        }
+
+        nomes_saida=''
+        for (let i=0; i<nomes.length;i++){
+            if(notas[i]>=6)
+                nomes_saida+=(nomes[i]+'\n')
+        }        
+        alert('Os alunos com média maior ou igual a 6 são:\n' + nomes_saida)
+
+    </script>
+</body>
+ 
+</html>

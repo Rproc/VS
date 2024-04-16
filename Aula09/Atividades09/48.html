@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 48
+      </h1>
+ 
+    <script>
+        
+        pessoa=[]
+        for(let i=0; i<10;i++){
+            userInput = prompt("Digite o nome da pessoa: ");
+            userInput2 = prompt("Digite o bairro: ")
+            pessoa[i]=[userInput, userInput2]
+        }
+     
+        pessoa.sort()
+        saida=''
+        pessoa.forEach(element => {
+            saida+=(element[0] + ' \t Bairro: ' + element[1] + '\n')
+        });
+        alert('Lista de pessoas e bairros, ordenado por pessoas:\n' + saida)
+
+    </script>
+</body>
+ 
+</html>

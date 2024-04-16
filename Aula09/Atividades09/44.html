@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 44
+      </h1>
+ 
+    <script>
+        
+
+        lista = []
+        userInput = prompt("Digite um número: ");
+        a = +userInput
+        lista.push(a)
+        for(let i=0; i<4;i++){
+            userInput = prompt("Digite um número: ");
+            a = +userInput
+            lista.push(a)
+        }
+        lista.sort((a, b) => a - b)
+        
+        alert('Os números em ordem crescente são: ' + lista.toString())
+
+    </script>
+</body>
+ 
+</html>

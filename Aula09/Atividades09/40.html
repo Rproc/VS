@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 40
+      </h1>
+ 
+    <script>
+
+        lista = []
+        for(let i=0; i<10;i++){
+            userInput = prompt("Digite um número: ");
+            a = +userInput
+            lista.push(a)
+
+        }
+        somatorio=0
+        lista.forEach(nota => {
+            somatorio+=nota
+        });
+        alert('A média dos números digitados é: ' + (somatorio/10))
+    </script>
+</body>
+ 
+</html>

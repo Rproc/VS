@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 47
+      </h1>
+ 
+    <script>
+        
+        nomes =[]
+        cidade=[]
+        telefone=[]
+        for(let i=0; i<10;i++){
+            userInput = prompt("Digite o nome da pessoa: ");
+            userInput2 = prompt("Digite a cidade: ")
+            userInput3 = prompt("Digite o telefone: ")
+            nomes.push(userInput)
+            cidade.push(userInput2)
+            telefone.push(userInput3)
+        }
+
+        saida=''
+        for (let i=0; i<nomes.length;i++){
+            if(cidade[i]=="Campo Grande"){
+                saida+=(nomes[i] + ' \t ' + telefone[i] + '\n')
+            }
+        }        
+        alert('Os nomes e telefones de moradores de Campo Grande são:\n' + saida)
+
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 43
+      </h1>
+ 
+    <script>
+        
+
+        lista = []
+        controlePar=0
+        controleImpar=0
+        for(let i=0; i<7;i++){
+            userInput = prompt("Digite um número: ");
+            a = +userInput
+            lista.push(a)
+            if(a%2==0)
+                controlePar++
+            else
+                controleImpar++
+
+        }
+        alert(controlePar + ' números digitados são pares\nE ' + controleImpar + ' números digitados são ímpares')
+
+    </script>
+</body>
+ 
+</html>

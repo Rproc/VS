@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                                   initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <h1>
+          Exercício 41
+      </h1>
+ 
+    <script>
+        
+
+        lista = []
+        for(let i=0; i<8;i++){
+            userInput = prompt("Digite um número: ");
+            a = +userInput
+            lista.push(a)
+
+        }
+        lista.sort((a, b) => a - b)
+        alert('O maior número é: ' + lista[lista.length-1] + '\nO menor número é: ' + lista[0])
+
+    </script>
+</body>
+ 
+</html>
